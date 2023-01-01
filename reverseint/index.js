@@ -15,12 +15,7 @@ function reverseInt(n) {
     .reduce((a, b) => {
       return b + a;
     });
-  if (n >= 0) {
-    return parseInt(res);
-  } else {
-
-    return -parseInt(res);
-  }
+  return parseInt(res) * Math.sign(n);
 }
 
 reverseInt(981);
